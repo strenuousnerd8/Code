@@ -1,0 +1,2 @@
+Arr, key = list(map(int, str(input("Enter Elements:\t")).split())), int(input("Enter Element to search:\t"))
+print("{key} is in index: {Arr}".format(key = key, Arr = Arr.index(key)) if key in Arr else False)
