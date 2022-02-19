@@ -4,7 +4,7 @@ nums = list(
         ).split()
     )
 )
-for j in range(len(nums)):
+for x in range(len(nums) / 2):
     for i in range(len(nums)):
         try:
             if nums[i] > nums[i + 1]:
