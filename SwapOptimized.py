@@ -12,6 +12,3 @@ def Cat(swap, ind):
     print(res)
 
 ShiftLet(str(input()))
-
-
-#2he3y
