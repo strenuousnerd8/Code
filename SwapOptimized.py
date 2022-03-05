@@ -5,7 +5,10 @@ def ShiftLet(take):
     for i in take:
         swaptake.append(i.upper() if i == i.lower() else i.lower())
     inds = [i for i, data in enumerate(swaptake) if data.isnumeric()]
-    return Cat(''.join(swaptake), inds)
+    if len(inds) < 2:
+        print(''.join(swaptake))
+    else:
+        return Cat(''.join(swaptake), inds)
 
 def Cat(swap, ind):
     res = swap[:ind[-2]] + str(swap[ind[-1]]) + swap[ind[-2]+1:ind[-1]] + str(swap[ind[-2]]) + swap[ind[-1]+1:]
