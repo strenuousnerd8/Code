@@ -10,7 +10,7 @@
 
 def timeConversion(s):
     # I just wrote a one-liner because it was too easy for branching and why not, we all love one liners
-    return '00' + s[2:-2] if 'AM' in s and '12' in s else '12'+ s[2:-2] if 'PM' in s and '12' in s else s[:-2] if 'AM' in s else str(int(s[:2]) + 12) + s[2:-2]
+    return '00' + s[2:-2] if 'AM' in s and '12' in s else '12' + s[2:-2] if 'PM' in s and '12' in s else s[:-2] if 'AM' in s else str(int(s[:2]) + 12) + s[2:-2]
 
 if __name__ == '__main__':
 
