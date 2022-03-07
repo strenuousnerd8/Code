@@ -2,14 +2,10 @@
 
 def diagonalDifference(arr):
     # Write your code here
-    lrsum = 0
-    rlsum = 0
-    for i, data in enumerate(arr):
-      try:
-        lrsum = data[i] + arr[i+1][i+1]
-        rlsum = data[i+1] + arr[i-1][i]
-      except IndexError:
-        pass
+    lrsum = rlsum = 0
+    for i in range(len(arr[0])):
+      lrsum += arr[i][i]
+      rlsum += arr[i-1][i]
     return rlsum - lrsum
 
 if __name__ == '__main__':
