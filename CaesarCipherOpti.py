@@ -1,4 +1,4 @@
-# Optimized CaesarCipher code using formula
+# Optimized CaesarCipher code using formula in 10 lines!
 # Encryption E(p) = (p + k) mod 26
 # Decryption E(c) = (c - k) mod 26
 import string
