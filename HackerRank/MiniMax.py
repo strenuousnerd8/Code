@@ -5,19 +5,14 @@
 #
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
+# One-liner most efficient answer
 
 def miniMaxSum(arr):
     # Write your code here
-    mini = maxi = 0
-    for i in arr:
-        if i != max(arr):
-            mini += i
-        if i != min(arr):
-            maxi += i
-    print(f'{mini} {maxi}')
+    print(sum(arr) - max(arr), sum(arr) - min(arr))
 
 if __name__ == '__main__':
 
-    arr = list(map(int, input().rstrip().split()))
+    arr = list(map(int, input().rstrip().split(' ')))
 
     miniMaxSum(arr)
