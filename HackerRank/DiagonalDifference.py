@@ -5,8 +5,8 @@ def diagonalDifference(arr):
     lrsum = rlsum = 0
     for i in range(len(arr[0])):
       lrsum += arr[i][i]
-      rlsum += arr[i-1][i]
-    return rlsum - lrsum
+      rlsum += arr[i][-i-1]
+    return abs(lrsum - rlsum)
 
 if __name__ == '__main__':
 
