@@ -1,4 +1,6 @@
-
+# Find the difference between left to right and right to left
+# Principal diagonal of the same matrix after summing the
+# elements in each type of diagonal
 
 def diagonalDifference(arr):
     # Write your code here
