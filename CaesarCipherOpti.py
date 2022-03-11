@@ -1,6 +1,6 @@
 # Optimized CaesarCipher code using formula, very readable.
 # Encryption E(p) = (p + k) mod 26
-# Decryption E(c) = (c - k) mod 26
+# Decryption D(c) = (c - k) mod 26
 import string
 library, res = string.ascii_lowercase, []
 userText, k = str(input("Enter plain/cipher text :\t")), int(input("Enter Key :\t"))
