@@ -13,8 +13,7 @@
 
 def sockMerchant(n, ar):
     # Write your code here
-    temp = []
-    lis = []
+    temp = lis = []
     res = 0
     for i in ar:
         if ar.count(i) >= 2 and i not in temp:
