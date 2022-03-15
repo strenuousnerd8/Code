@@ -8,7 +8,7 @@
 
 def flippingMatrix(matrix):
     # Write your code here
-    N=2*n-1 ; return sum( max(matrix[i][j],matrix[i][N-j],matrix[N-i][j],matrix[N-i][N-j]) for i in range(n) for j in range(n) )
+    N=2*n-1 ; return sum(max(matrix[i][j],matrix[i][N-j],matrix[N-i][j],matrix[N-i][N-j]) for i in range(n) for j in range(n))
 
 if __name__ == '__main__':
 
