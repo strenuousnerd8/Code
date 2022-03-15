@@ -10,14 +10,10 @@
 
 def superDigit(n, k):
     # Write your code here
-    # p = sum(list(map(int, n * k)))
-    # if len(str(p)) > 1:
-    #     return superDigit(str(p), 1)
-    # else:
-    #     return p
-    p = n * k
-    p = []
-
+    if len(n) == 1:
+        return n
+    add = str(sum([int(d) for d in n]) * k)
+    return superDigit(add, 1)
 
 if __name__ == '__main__':
 
