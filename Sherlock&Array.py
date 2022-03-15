@@ -9,7 +9,7 @@ def balancedSums(arr):
     # Write your code here
     # Solution 1 (Time inefficient)
     # return 'YES' if [True for i in range(len(arr)) if sum(arr[:i]) == sum(arr[i+1:])] else 'NO'
-    # Solution 2 (Time Efficient)
+    # Solution 2 (Time Efficient) 'Divide and Conquer'
     rp = sum(arr)
     lp = 0
     for i in arr:
