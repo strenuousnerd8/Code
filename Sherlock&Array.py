@@ -1,20 +1,9 @@
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
 #
 # Complete the 'balancedSums' function below.
 #
 # The function is expected to return a STRING.
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
-# 1
-# 4
-# 1 2 3 4
 
 def balancedSums(arr):
     # Write your code here
