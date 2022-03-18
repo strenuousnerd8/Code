@@ -8,8 +8,8 @@ class UserMainCode(object):
             res.append(stre[i] * ints[i])
         res = ''.join(res)
         try:
-            return res[input2-1] if res[input2-1] in res else -1
+            return res[input2-1] if res[input2-1] in res else str(-1)
         except IndexError:
-            return -1
+            return str(-1)
 
-print(UserMainCode.characterAt("a2b3", 3))
+print(UserMainCode.characterAt("a3b2", 7))
