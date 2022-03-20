@@ -2,13 +2,10 @@
 nodna = int(input())
 samples = str(input()).split()
 divisions = int(input())
-resultdna = []
-increasing_parts = 0
-for x in range(0, divisions+1):
-    increasing_parts += divisions
-    resultdna.append("".join(samples[increasing_parts-divisions:increasing_parts]))
-
-print(" ".join(resultdna))
+samples = str(input()).split()
+divisions = int(input())
+resultdna = [''.join(samples[i:i+divisions]) for i in range(0, len(samples), divisions)]
+print(resultdna)
 
 # Number of ommitted special characters
 NAME = list(str(input()))
