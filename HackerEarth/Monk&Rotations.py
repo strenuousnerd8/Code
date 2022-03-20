@@ -1,10 +1,7 @@
-#Main Program
-def rotateIt(k, lis):
-    return ' '.join(lis[-int(k):] + lis[:int(k)+1])
-
-#Driver Code
-t = int(input())
-for i in range(t):
-    n, k = input().split()
-    lis = str(input()).split()
-    print(rotateIt(k, lis))
+# Rotate an integer string to the right k number of time
+t  = int(input())
+for _ in range(t):
+    n,k = map(int,input().split())
+    l = list(map(int,input().split()))
+    x = k%n
+    print(*(l[n-x:]+l[:n-x]))
