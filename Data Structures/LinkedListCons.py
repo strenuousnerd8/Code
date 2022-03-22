@@ -50,8 +50,23 @@ class LinkedList:
         else:
             new_node.next = self.head
             self.head = new_node
+        self.length += 1
+        return True
+
+    def popfirst(self):
+        if self.head is None:
+            return None
+        else:
+            temp = self.head
+            self.head = self.head.next
+            temp.next = None
+            self.length -= 1
+        if self.length == 0:
+            self.tail == None
+        return temp
 
 new = LinkedList(1)
 new.append(2)
 new.prepend(3)
+print(new.popfirst())
 new.printlist()
