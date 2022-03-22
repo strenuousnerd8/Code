@@ -74,8 +74,15 @@ class LinkedList:
                 temp = temp.next
             return temp
 
-new = LinkedList(1)
-new.append(2)
-new.prepend(3)
+    def setvalue(self, index, value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
+new = LinkedList(0)
+for i in range(1,3):
+    new.append(i)
+new.setvalue(0,1)
 new.printlist()
-print(new.get(1))
