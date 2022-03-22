@@ -65,8 +65,17 @@ class LinkedList:
             self.tail == None
         return temp
 
+    def get(self, index):
+        if index < 0 or index > self.length:
+            return None
+        else:
+            temp = self.head
+            for _ in range(index):
+                temp = temp.next
+            return temp
+
 new = LinkedList(1)
 new.append(2)
 new.prepend(3)
-print(new.popfirst())
 new.printlist()
+print(new.get(1))
