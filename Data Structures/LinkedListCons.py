@@ -109,9 +109,20 @@ class LinkedList:
         self.length -= 1
         return temp
 
+    def reverse(self):
+        temp = self.head
+        self.head = self.tail
+        self.tail = temp
+        pre = None
+        post = temp.next
+        for _ in range(self.length):
+            post = temp.next
+            temp.next = pre
+            pre = temp
+            temp = post
+
 new = LinkedList(0)
 for i in range(1,3):
     new.append(i)
-new.insert(2, 4)
-print(new.remove(3))
+new.reverse()
 new.printlist()
