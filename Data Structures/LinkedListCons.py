@@ -1,6 +1,3 @@
-from jinja2 import Undefined
-
-
 class Node:
     def __init__(self, value):
         self.value = value
