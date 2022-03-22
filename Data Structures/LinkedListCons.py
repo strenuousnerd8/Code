@@ -40,7 +40,7 @@ class LinkedList:
         if self.length == 0:
             self.head = None
             self.tail = None
-        return temp.value
+        return temp
 
     def prepend(self, value):
         new_node = Node(value)
@@ -66,7 +66,7 @@ class LinkedList:
         return temp
 
     def get(self, index):
-        if index < 0 or index > self.length:
+        if index < 0 or index >= self.length:
             return None
         else:
             temp = self.head
@@ -81,8 +81,8 @@ class LinkedList:
             return True
         return False
 
-    def insertval(self, index, value):
-        if index < 0 or index > self.length:
+    def insert(self, index, value):
+        if index < 0 or index >= self.length:
             return False
         elif index == 0:
             return self.prepend(value)
@@ -95,8 +95,23 @@ class LinkedList:
         self.length += 1
         return True
 
+    def remove(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        elif index == 0:
+            return self.popfirst()
+        elif index == self.length - 1:
+            return self.pop()
+        pre = self.get(index - 1)
+        temp = pre.next
+        pre.next = temp.next
+        temp.next = None
+        self.length -= 1
+        return temp
+
 new = LinkedList(0)
 for i in range(1,3):
     new.append(i)
-new.insertval(2, 4)
+new.insert(2, 4)
+print(new.remove(3))
 new.printlist()
