@@ -1,12 +1,5 @@
 def palindromeCheck(word):
-    palindrome = list(word)
-    palindrome.reverse()
-    palindrome = ''.join(palindrome)
-    if palindrome == word:
-        return True
-    else:
-        return False
-    return palindrome
+    return True if word[::-1] == word else False
 
 print(palindromeCheck("what"))
 print(palindromeCheck("nitin"))

@@ -1,16 +1,6 @@
-nums = list(
-    map(int, str(
-        input()
-        ).split()
-    )
-)
-for x in range(len(nums) / 2):
-    for i in range(len(nums)):
-        try:
-            if nums[i] > nums[i + 1]:
-                nums[i] = nums[i] ^ nums[i + 1]
-                nums[i + 1] = nums[i] ^ nums[i + 1]
-                nums[i] = nums[i] ^ nums[i + 1]
-        except IndexError:
-            pass
-print(nums)
+l = list(map(int,input()))
+for i in range(len(l) - 1):
+    for j in range(len(l) - i - 1):
+        if l[j] > l[j + 1]:
+            l[j], l[j + 1] = l[j + 1], l[j]
+print(l)
