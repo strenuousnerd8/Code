@@ -7,8 +7,7 @@
 
 def counterGame(n):
     # Write your code here
-    binmap = bin(n-1)
-    return "Richard" if binmap.count('1') % 2 == 0 else "Louise"
+    return "Richard" if bin(n-1).count('1') % 2 == 0 else "Louise"
 
 if __name__ == '__main__':
 
