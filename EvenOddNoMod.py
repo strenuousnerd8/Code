@@ -1,0 +1,1 @@
+print("Even" if bin(int(input()))[-1] == '0' else 'Odd')
