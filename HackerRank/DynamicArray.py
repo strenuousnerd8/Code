@@ -10,7 +10,7 @@
 
 def dynamicArray(n, queries):
     # Write your code here
-    arr = [[] for i in range(n)]
+    arr = [[] for _ in range(n)]
     lastAnswer = 0
     res = []
     for i in queries:
