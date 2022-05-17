@@ -1,5 +1,5 @@
 # Find the subarrays with target sum within a given array using sliding window
-# Time: O(n ^ 2), Space: O(1)
+# Time: O(n), Space: O(1)
 def findSum(arr, target):
     subs = []
     l, r = 0, 1
