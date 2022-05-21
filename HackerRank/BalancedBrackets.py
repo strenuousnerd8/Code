@@ -6,5 +6,5 @@ def isBalanced(s):
     return "YES"
 
 if __name__ == '__main__':
-        result = isBalanced("{{)[](}}")
+        result = isBalanced(input())
         print(result)

@@ -18,7 +18,5 @@ def isValid(s):
     return 'NO'
 
 if __name__ == '__main__':
-
-    result = isValid("abcdefghhgfedecba")
-
+    result = isValid(input())
     print(result)
