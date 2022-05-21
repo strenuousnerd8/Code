@@ -30,7 +30,6 @@ def authEvents(events):
     return ans
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     events_rows = int(input().strip())
     events_columns = int(input().strip())
