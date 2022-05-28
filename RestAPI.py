@@ -1,5 +1,7 @@
 import requests
 import json
-country = "afghanistan"
+country = input().capitalize()
 response = requests.get('https://jsonmock.hackerrank.com/api/countries?name={}'.format(country))
-print(response.json()['data'][0]['capital'])
+if response.json()['data'] != []:
+    print(response.json()['data'][0]['capital'])
+else: print(-1)
