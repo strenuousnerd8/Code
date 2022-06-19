@@ -8,6 +8,6 @@ def BubbleSort(arr, n):
                 changed = True
     return arr
 
-arr = [20, 21, 39, 43, 49, 54, 73, 85, 96]
+arr = [6, 1, 6, 7, 8, 5, 8, 9, 1]
 n = 9
 print(BubbleSort(arr, n))
