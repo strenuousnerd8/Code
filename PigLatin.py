@@ -1,7 +1,7 @@
 def pigLatin(text):
     new_texts = text.split()
     result = []
-    for i, word in enumerate(new_texts):
+    for word in new_texts:
         say = list(word)
         init  = say[0]
         del say[0]
