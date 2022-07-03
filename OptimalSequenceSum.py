@@ -9,4 +9,4 @@ while pos < (len(arr) - i + 1):
     out.append(arr[pos : pos + i])
     pos += i
     i += 1
-print(max([sum(i) for i in out]))
+print(max(sum(i) for i in out))
