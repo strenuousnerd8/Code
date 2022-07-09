@@ -1,3 +1,5 @@
+# Word with highest number of repeated characters without characters in event token
+
 eventToken = 'xyfidwg'
 
 def maxCharOccurance(word):
