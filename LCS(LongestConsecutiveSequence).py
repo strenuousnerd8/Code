@@ -1,4 +1,4 @@
-# Return the length of longest consecutive sequence of integers in the list
+# Find the length of longest consecutive sequence of integers in the list
 
 l = [5, 6, 1, 2, 8, 9, 7]
 
