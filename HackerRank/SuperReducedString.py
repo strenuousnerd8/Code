@@ -16,7 +16,6 @@ def superReducedString(s):
             i = 0
             if len(s) == 0:
                 return 'Empty String'
-                break
         else:
             i+=1
     return ''.join(s)
