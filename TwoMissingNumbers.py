@@ -1,7 +1,7 @@
 # Find the two missing numbers in the sequential series
 def get(arr, n):
     res = []
-    mark = [False for i in range(n + 1)]
+    mark = [False for _ in range(n + 1)]
     for i in range(n - 2):
         mark[arr[i]] = True
     for i in range(1, n + 1):
