@@ -4,18 +4,33 @@
 # The function is expected to return a STRING.
 # The function accepts STRING s as parameter.
 #
-
+from collections import Counter
 def isValid(s):
     # Write your code here
-    f = []
-    while len(s) > 0:
-        f.append(s.count(s[0]))
-        s = s.replace(s[0],'')
-    n = min(f)
-    x = max(f)
-    if x == n or (f.count(n) == len(f)-1 and x-n == 1) or (f.count(x) == len(f)-1 and n == 1):
-        return 'YES'
-    return 'NO'
+    count = dict()
+
+    for i in s:
+        count[i] = count.get(i, 0) + 1
+
+    if len(set(count.values())) == 1:
+        return "YES"
+
+    elif len(set(count.values())) > 2:
+        return "NO"
+
+    else:
+        for i in count:
+            count[i] -= 1
+            temp = list(count.values())
+            try:
+                temp.remove(0)
+            except:
+                pass
+            if len(set(temp)) == 1:
+                return "YES"
+            else:
+                count[i] += 1
+        return "NO"
 
 if __name__ == '__main__':
     result = isValid(input())
