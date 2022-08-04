@@ -4,7 +4,6 @@
 # The function is expected to return a STRING.
 # The function accepts STRING s as parameter.
 #
-from collections import Counter
 def isValid(s):
     # Write your code here
     count = dict()
