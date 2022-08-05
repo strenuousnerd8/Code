@@ -20,9 +20,9 @@ def Kadane(arr):
 
         if max_current > max_global:
             max_global = max_current
-            r_index = i 
+            r_index = i
 
-    return left_index, r_index, arr[left_index: r_index], max_global
+    return left_index, r_index, arr[left_index: r_index + 1], max_global
 
 
 
