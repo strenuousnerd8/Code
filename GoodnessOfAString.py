@@ -1,5 +1,3 @@
-import json
-from re import L
 def goodnessOfString(s):
     # Write your code here.
     dep = 0
