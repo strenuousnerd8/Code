@@ -1,5 +1,4 @@
 def anyPalindrome(s):
-    res = []
     for i in range(len(s)):
         if s[:i] + s[i + 1:] == s[:i] + s[i + 1:][::-1]:
             return True
