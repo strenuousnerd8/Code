@@ -1,13 +1,12 @@
 # Twosum :) ifkyk
 class Solution:
     def twoSum(self, nums, target):
-        complementMap = dict()
+        prev = {}
         for i in range(len(nums)):
-            complement = target - nums[i]
-            if nums[i] in complementMap:
-                return [complementMap[nums[i]], i]
-            else:
-                complementMap[complement] = i
+            diff = target - nums[i]
+            if diff in prev:
+                return [prev[diff], i]
+            prev[nums[i]] = i
 
 Answer = Solution()
 print(Answer.twoSum([2,7,11,15], 26))
