@@ -1,0 +1,4 @@
+1. The fastest way to copy a list to another variable is using list slicing
+    arr = [1, 2, 3, 4]
+    new_arr = arr[:]
+
