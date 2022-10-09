@@ -3,8 +3,7 @@
 
 # Using zip() for zipping 2 lists together
 def sortArr(a, b):
-    c = zip(b, a)
-    print(*[x for _, x in sorted(c)], sep=" ")
+    print(*[x for _, x in sorted(zip(b, a))], sep=" ")
 
 
 # Driver code
