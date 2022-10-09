@@ -1,4 +1,6 @@
 # Find prime numbers in an interval
+
+
 def findPrimes(s, e):
     primes = []
     for i in range(s, e):
@@ -14,5 +16,4 @@ def findPrimes(s, e):
 
 
 # Driver code
-
 print(*findPrimes(2, 7), sep=" ")
