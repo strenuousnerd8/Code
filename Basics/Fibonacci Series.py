@@ -1,4 +1,6 @@
-# Fibonacci sequence
+# Print the fibonacci sequence till n
+
+
 def fibonacciSeq(n):
     a, b = 0, 1
     res = [a, b]
