@@ -11,7 +11,7 @@ def getOpenApplications(commands):
             if int(subject) > len(applications):
                 applications.clear()
                 continue
-            for x in range(int(subject)):
+            for _ in range(int(subject)):
                 applications.pop()
     return applications
                 
